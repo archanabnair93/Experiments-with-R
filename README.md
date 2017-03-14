@@ -20,6 +20,6 @@ It is observed that, at lower carat values, there is mispricing amongst almost a
 For IF clarity diamonds between calarity range 1.5 and 2.0, there is mis-pricing.
 Lowest grade diamonds are clearly priced after carat value of 0.5
 
-Files - mispricing_anlaysis.R, diamond-price-correl.csv
+Files - mispricing_anlaysis.R, diamond-price-correl.csv, diamondRplot
 Info on diamond clarity: http://blog.longsjewelers.com/hs-fs/hub/323238/file-1856876318-jpg/DiamondClarity.jpg?t=1489087979876
 
