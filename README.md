@@ -6,4 +6,4 @@ Contains code snippets that does mini experiments on datasets
 Using a dataset which contains information on the carat value, clarity (or grade) and price for various types of diamonds, 
 an R snippet determines whether there has been a mispricing for a category(or grade) of diamonds.
 
-Files - mispricing_anlaysis.R, diamond-grade-correl.csv
+Files - mispricing_anlaysis.R, diamond-price-correl.csv
