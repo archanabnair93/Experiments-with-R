@@ -1,4 +1,6 @@
 Mispricing Analysis
+
+
 Description: Using a dataset which contains information on the carat value, clarity (or grade) and price for various types of diamonds, an R snippet determines whether there has been a mispricing for a category(or grade) of diamonds.
 
 Method: Analyze diamond price based on diamond clarity(or grade) using ggplot2 package. A scatterplot is gnerated using ggplot2 package, overriding the plot defaults using aesthetic specifications(aes(), geom_point()). This enables us to clearly analyze the carat v/s price data based on clarity. Only statistically significant data is analyzed by limiting data in the 'data' specification. Average values are analyzed as smoothed curves using geom_smooth()
