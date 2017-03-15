@@ -23,3 +23,10 @@ Lowest grade diamonds are clearly priced after carat value of 0.5
 Files - diamond_mispricing_anlaysis.R, diamond-price-correl.csv, diamondRplot.jpeg
 Info on diamond clarity: http://blog.longsjewelers.com/hs-fs/hub/323238/file-1856876318-jpg/DiamondClarity.jpg?t=1489087979876
 
+2. Testing Law of Large Numbers
+
+Description:
+Normal distribution is certainly any OCD-lover's favorite. In this test, we check whether the the average of all numbers obtained from a set of values which follow a normal distribution with mean=0, standard deviation =1 (standard normal distribution) approaches the value 68.2% as we increase the number of random numbers selected. 
+
+Files - LLN.R
+
