@@ -1,4 +1,4 @@
-2. Testing Law of Large Numbers
+1. Testing Law of Large Numbers
 
 Description: Normal distribution is certainly any OCD-lover's favorite. According to probability theory, 68% of the values in a standard normal distribution lie between -1 and 1. In this test, we check whether the probability that all numbers obtained from a set of values which follow a normal distribution with mean=0, standard deviation =1 (standard normal distribution) approaches the value 68.2% as we increase the number of random numbers selected.
 
