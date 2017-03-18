@@ -1,0 +1,8 @@
+library(xlsx)
+rwanda_data <- read.xlsx("/Users/archanabalachandran/Downloads/rwanda_income.xlsx",sheetIndex = 1)
+rwanda_data
+
+rwanda_matrix<- cbind(rwanda_data$year,rwanda_data$income)
+
+matplot(rwanda_matrix[,2],type="b",xlab="year",ylab="net national income",pch=15:18,col=c(1:4,6))
+
