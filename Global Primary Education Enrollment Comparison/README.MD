@@ -43,11 +43,11 @@ There is not much information available on the cause
 
 
 #Analyzed the 2007 - 2013 data for Saudi Arabia's 
-# Progression to secondary school rate for women
-#  In 2007 97.1
-#  In 2011 and 2012 100%
-#  In 2013 92.4%. 
-# Either the 2011 and 2012 could be incorrect statistics,
-# Or the educational system took a drastic measure
-# which may have caused a sudden drop in enrollment rates
-# In which case, there would have been studies on the same.
+Progression to secondary school rate for women
+ In 2007 97.1
+ In 2011 and 2012 100%
+ In 2013 92.4%. 
+ Either the 2011 and 2012 could be incorrect statistics,
+ Or the educational system took a drastic measure
+ which may have caused a sudden drop in enrollment rates
+ In which case, there would have been studies on the same.
