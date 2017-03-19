@@ -6,4 +6,5 @@ rwanda_matrix<- cbind(rwanda_data$year,rwanda_data$income)
 
 matplot(rwanda_matrix[,2],type="b",xlab="year",ylab="net national income",pch=15:18,col=c(1:4,6))
 
-qplot(data=rwanda_data,x=year, y=income,color=I("turquoise4"), alpha=I(0.7))
+qplot(data=rwanda_data,x=year, y=income,color=I("turquoise4"), alpha=I(0.7),geom=c("point","path"))
+
