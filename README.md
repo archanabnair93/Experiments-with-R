@@ -6,7 +6,7 @@ Contains code snippets that does mini experiments on datasets
 Description: Adjusted Net National Income between the period 1970 and 2000 were collected(source World Bank databank). Using the matplot function, the net income based on year was plotted.
 
 Method:
-Matplot function was used to plot the data. Matplot function has been used only for learning purposes, and advanced plotting functions are obviously a better choice.
+Qplot and Matplot functions were used to plot the data. Matplot function has been used only for learning purposes, and advanced plotting functions are obviously a better choice.
 
 Insights:
 
