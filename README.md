@@ -3,6 +3,7 @@ Contains code snippets that does mini experiments on datasets
 
 
 1. Impact of the Civil War on the Rwandan Economy
+
 Description: Adjusted Net National Income between the period 1970 and 2000 were collected(source World Bank databank). Using the matplot function, the net income based on year was plotted.
 
 Method:
