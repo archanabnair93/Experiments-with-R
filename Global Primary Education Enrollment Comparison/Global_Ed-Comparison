@@ -1,0 +1,76 @@
+
+# Comparison of Global Primary Education Enrollment(Female) in 2012 and 2013 wrt Income Level
+# Author: Archana Balachandran
+# Data Source: http://databank.worldbank.org/  - Gender Statistics database
+
+#Reading primary completion data from GenderStats excel-Sheet 1
+primarydata<-read.xlsx("GenderStats.xlsx",sheetIndex = 1)
+primarydata
+
+##Reading secondary enrollment data from GenderStats excel-Sheet 2
+secondarydata<-read.xlsx("GenderStats.xlsx",sheetIndex = 2)
+secondarydata
+
+#Plotting Primary Completion vs Income Group in 2012
+qplot(data=primarydata,x=X2012,y=Income.Group,color=Income.Group, xlab="Primary Completion rate",alpha=I(0.5),main="Primary completion rate vs Income Group 2012")
+
+#Plotting Primary Completion vs Income Group in 2013
+qplot(data=primarydata,x=X2013,y=Income.Group,color=Income.Group, xlab="Primary Completion rate",alpha=I(0.5),main="Primary completion rate vs Income Group 2013")
+
+#Plotting Secondary Progession vs Income Group in 2012
+qplot(data=secondarydata,x=X2012,y=Income.Group,color=Income.Group, xlab="Progression to Secondary school",alpha=I(0.5),main="Progression to Secondary school vs Income Group 2012")
+
+#Plotting Secondary Progession vs Income Group in 2013
+qplot(data=secondarydata,x=X2013,y=Income.Group,color=Income.Group, xlab="Progression to Secondary school",alpha=I(0.5),main="Progression to Secondary school vs Income Group 2013")
+
+# Analysis of Low Income Groups 
+
+# Analysis 1 - Gambia is the best country in this group
+#             that has highest progression to secondary school
+#           There was a slight increase in ratio from 2012 to 2014
+#Getting info on low income group countries (result= 10)
+nrow(secondarydata[secondarydata$Income.Group=="Low income",])
+a<-secondarydata[secondarydata$Income.Group=="Low income",]
+a
+
+# Getting info on the country with highest enrollment value in 2012
+#Result = Gambia
+a[a$X2012==max(a$X2012),]
+
+
+# Analysis 2  - Guinea in 2012 was notably below all other 
+#               countries in this group
+#               but showed significant progress in 2013
+#               possible indication of installation of educational programs
+b<-secondarydata[secondarydata$Income.Group=="Low income",]
+b
+# Getting info on the country with lowest secondary enrollment value in 2012
+
+b[b$X2012==min(b$X2012),]
+#Result is Guinea 
+
+
+
+# Analysis of High Income Groups
+
+
+# Analysis 1 : 
+d<-secondarydata[secondarydata$Income.Group=="High income",]
+d
+# observing minimum value in 2012 -shows no significant change
+d[d$X2012==min(d$X2012),]
+# observing minimum value in 2013 -Saudi Arabia shows significant change
+# value in 2012 is 100%, but in 2013 is 92.43%
+# There is not much information available on the cause
+d[d$X2013==min(d$X2013),]
+
+
+#Analyzed the 2007 - 2013 data for Saudi Arabia's 
+# Progression to secondary school rate for women
+#  In 2007 97.1
+#  In 2011 and 2012 100%
+#  In 2013 92.4%. 
+# Either the 2011 and 2012 could be incorrect statistics,
+# Or the educational system took a drastic measure
+# which may have caused a sudden drop in enrollment rates
+# In which case, there would have been studies on the same.
