@@ -77,4 +77,13 @@ nrow(aa)
 
 aa[aa$InfantMortalityRate==min(aa$InfantMortalityRate),]
 # Result is Nepal
+nrow(data$Income.Group)
 
+# Observing Income Groups distribution
+
+f<-ggplot(data=data[1:101,], aes(x=Income.Group))
+f+geom_bar(color="steelblue2", fill="turquoise3")
+
+#most countries fall into Lower middle income category
+# Upper middle and low income categories have almost same number of countries
+#There are very few high income countries in this dataset
