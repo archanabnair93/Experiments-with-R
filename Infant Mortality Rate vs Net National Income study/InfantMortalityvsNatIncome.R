@@ -94,7 +94,7 @@ f+geom_bar(color="steelblue2", fill="turquoise3")
 # 3 Faceting based on Income Groups
 
 g<- ggplot(data=data[1:105,], aes(x=AdjNetNatIncome, y=InfantMortalityRate,color=Income.Group))
-g + geom_point() + facet_grid(Income.Group~.)
+g + geom_point() + geom_smooth()+facet_grid(Income.Group~.)
 
 # Observations 
 # High Income Group countries fall within 25
