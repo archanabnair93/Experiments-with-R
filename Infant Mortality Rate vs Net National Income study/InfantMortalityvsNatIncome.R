@@ -25,7 +25,7 @@ str(data)
 max(data$InfantMortalityRate)
 min(data$InfantMortalityRate)
 min(data$AdjNetNatIncome)
-# Plotting National income against Infant mortality rate
+# 1 Plotting National income against Infant mortality rate
 p <- ggplot(data=data, aes(x=AdjNetNatIncome,y=InfantMortalityRate,main="Net National Income vs Infant Mortality Rate", color=Income.Group))
 p+geom_point(alpha=I(0.4))
 
@@ -79,11 +79,25 @@ aa[aa$InfantMortalityRate==min(aa$InfantMortalityRate),]
 # Result is Nepal
 nrow(data$Income.Group)
 
-# Observing Income Groups distribution
+# 2 Observing Income Groups distribution
 
 f<-ggplot(data=data[1:101,], aes(x=Income.Group))
 f+geom_bar(color="steelblue2", fill="turquoise3")
 
+# Observation
 #most countries fall into Lower middle income category
 # Upper middle and low income categories have almost same number of countries
 #There are very few high income countries in this dataset
+
+
+
+# 3 Faceting based on Income Groups
+
+g<- ggplot(data=data[1:105,], aes(x=AdjNetNatIncome, y=InfantMortalityRate,color=Income.Group))
+g + geom_point() + facet_grid(Income.Group~.)
+
+# Observations 
+# High Income Group countries fall within 25
+# Low income groups fall above 25
+# Lower middle income group falls within 75. Higher national income shows some positive impact on mortality
+# Upper middle income typically falls below 25
