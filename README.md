@@ -15,7 +15,7 @@ It was observed that in 1991, the growing national income saw a drastic drop, an
 
 Folder: Impact of Genocide on rwandan Economy 
 
-2. Mispricing Analysis 
+2. Diamond Mispricing Analysis 
 
 Description: 
 Using a dataset which contains information on the carat value, clarity (or grade) and price for various types of diamonds, 
