@@ -92,3 +92,9 @@ good months (where profit after tax greater than the mean for the year)
 bad months (where profit after tax less than the mean for the year)
 the best month (profit after tax was max for the year)
 the worst month (profit after tax was min for the year)
+
+
+6. Global Primary Education Enrollment Comparison
+
+
+7. Infant Mortality Rate vs Net National Income study
